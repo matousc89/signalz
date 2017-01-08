@@ -2,6 +2,4 @@
 Signalz
 ================
 
-Data generators in Pyton.
-
-
+Data generators in Python.
