@@ -1,7 +1,7 @@
 """
-.. versionadded:: 0.1
+.. versionadded:: 0.2
 
-This function generates sinus waves with given period, amplitude and offset.
+This function generates cosinus waves with given period, amplitude and offset.
 It is also possible to use delay defined in samples to crop the first wave.
 
 Example Usage
@@ -12,16 +12,18 @@ Simple example
 .. code-block:: python
 
     N = 200 # number of samples
-    x = signalz.sinus(N)
+    x = signalz.cosinus(N)
 
 Function Documentation
 ======================================
 """
 import numpy as np
 
-def sinus(n, period=100, amplitude=2, offset=0, delay=0):
+import signalz
+
+def cosinus(n, period=100, amplitude=2, offset=0, delay=0):
     """
-    Sinus waves generator.
+    Cosinus waves generator.
 
     **Args:**
     
@@ -40,9 +42,10 @@ def sinus(n, period=100, amplitude=2, offset=0, delay=0):
     
     **Returns:**
     
-    * vector of sinus waves (1d array)   
+    * vector of cosinus waves (1d array)   
     """
-    t = np.arange(n) + delay
-    return np.sin(t*2*np.pi/float(period))*0.5*amplitude + offset
+    delay += period/4.
+    return signalz.sinus(n, period, amplitude, offset, delay)
+
 
 

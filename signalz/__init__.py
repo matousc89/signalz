@@ -53,4 +53,7 @@ Indices and tables
 * :ref:`search`
 
 """
+
 from generators import *
+from misc import *
+
