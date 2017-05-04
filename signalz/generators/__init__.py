@@ -5,4 +5,4 @@ from signalz.generators.sinus import sinus
 from signalz.generators.cosinus import cosinus
 from signalz.generators.steps import steps
 from signalz.generators.random_steps import random_steps
-
+from signalz.generators.logistic_map import logistic_map

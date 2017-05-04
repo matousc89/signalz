@@ -28,12 +28,72 @@ The User Quide
 
 Here is complete documentation for all implemented functions.
 
-.. toctree::
-    :maxdepth: 3
-    :titlesonly:
-    :glob:
-    
-    sources/generators/*
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-sinus`
+
+.. cssclass:: functag
+
+    :ref:`tags-goniometric` 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-cosinus`
+
+.. cssclass:: functag
+
+    :ref:`tags-goniometric` 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-steps`
+
+.. cssclass:: functag
+
+    :ref:`tags-steps` 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-random_steps`
+
+.. cssclass:: functag
+
+    :ref:`tags-steps`, :ref:`tags-random` 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-mackey_glass`
+
+.. cssclass:: functag
+
+    :ref:`tags-chaotic` 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-white_noise`
+
+.. cssclass:: functag
+
+    :ref:`tags-random` 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-autoregressive_model`
+
+.. cssclass:: functag
+
+    :ref:`tags-autoregressive` 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-logistic_map`
+
+.. cssclass:: functag
+
+    :ref:`tags-population_model`, :ref:`tags-chaotic`  
+
+
 
 Contact
 =====================

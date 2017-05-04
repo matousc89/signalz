@@ -11,7 +11,7 @@ def readme():
 setup(
     name = 'signalz',
     packages = find_packages(exclude=("tests",)),
-    version = '0.2',
+    version = '0.3',
     description = 'Data generators in Python',
     long_description = readme(),
     author = 'Matous Cejnek',
@@ -20,7 +20,7 @@ setup(
     license = 'MIT',
     url = 'http://matousc89.github.io/signalz/',
     download_url = 'https://github.com/matousc89/signalz/',
-    keywords = ['signals', 'data', 'time-series', 'generators'],
+    keywords = ['signals', 'data', 'time-series', 'generators', 'models'],
     install_requires=[
         'numpy',
     ],    
