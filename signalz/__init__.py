@@ -28,7 +28,6 @@ The User Quide
 
 Here is complete documentation for all implemented functions.
 
-
 .. cssclass:: funcitem
 
     * :ref:`generators-sinus`
@@ -114,6 +113,6 @@ Indices and tables
 
 """
 
-from generators import *
-from misc import *
+from signalz.generators import *
+from signalz.misc import *
 
