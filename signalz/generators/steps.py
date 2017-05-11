@@ -1,9 +1,10 @@
 """
 .. versionadded:: 0.2
+.. versionchanged:: 0.4
 
 This function generates steps according to given sequence of values and
 given width of steps. Function also can repeat given
-sequence of steps.
+sequence according required number of repeats, or desired lenght of data.
 
 Example Usage
 ==================
@@ -25,9 +26,10 @@ Function Documentation
 ======================================
 """
 import numpy as np
-import matplotlib.pylab as plt
 
-def steps(step_width, values, repeat=1):
+from signalz.misc import check_type_or_raise
+
+def steps(step_width, values, repeat=1, size=None):
     """
     This function generates steps from given values.
     
@@ -39,29 +41,33 @@ def steps(step_width, values, repeat=1):
     
     **Kwargs:**
          
-    * `repeat` - number of step sequence repetions (int)
+    * `repeat` - number of step sequence repetions (int), this variable is used,
+      if the `size` is not defined
+    
+    * `size` - size of output data in samples (int), if the `size` is used,
+      the `repeat` is ignored.
     
     **Returns:**
     
-    * `x` - array of values describing desired steps (1d array)
+    * array of values representing desired steps (1d array)
     """
-    try:
-        step_width = int(step_width)
-    except:
-        raise ValueError('Step widht must be an int.') 
-    try:
-        repeat = int(repeat)
-    except:
-        raise ValueError('Repeat arg must be an int.') 
+    check_type_or_raise(step_width, int, "step width")
+    check_type_or_raise(repeat, int, "repeat")
     try:
         values = np.array(values)
     except:
         raise ValueError('Values must be a numpy array or similar.') 
     # generate steps
-    x = np.repeat(values, step_width)  
-    # repeat if needed  
-    x = np.tile(x, repeat)
-    return x
+    x = np.repeat(values, step_width)          
+    if size is None:
+        # repeat according to the desired repetions
+        x_full = np.tile(x, repeat)      
+    else:
+        check_type_or_raise(size, int, "size")
+        # repeat till size is reached and crop the data to match size
+        repeat = int(np.ceil(size / float(len(x))))
+        x_full = np.tile(x, repeat)[:size]
+    return x_full
 
 
 

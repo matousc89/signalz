@@ -1,7 +1,8 @@
 """
 .. versionadded:: 0.1
+.. versionchanged:: 0.4
 
-This function generates white noise series. This function uses
+This function generates Gaussian white noise series. This function uses
 `numpy.random.normal`.
 
 Function Documentation
@@ -9,7 +10,7 @@ Function Documentation
 """
 import numpy as np
 
-def white_noise(n, offset=0, std=1):
+def gaussian_white_noise(n, offset=0, std=1):
     """
     Random values with normal distribution.
 
@@ -25,6 +26,6 @@ def white_noise(n, offset=0, std=1):
     
     **Returns:**
     
-    * vector of random values (1d array)   
+    * vector of values representing the noise (1d array)   
     """
     return np.random.normal(offset, std, n)

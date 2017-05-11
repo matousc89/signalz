@@ -19,3 +19,16 @@ def matrixize_input(x, n):
     if len(x.shape) == 1:
         x = np.tile(x, (n, 1))
     return x  
+    
+def check_type_or_raise(obj, expected_type, obj_name):
+    """
+    This fuction raises error if the object does not have expected type.
+    """
+    if not isinstance(obj, expected_type):
+        raise TypeError(
+            "'{}' must be {}, not {}".format(
+                obj_name,
+                expected_type.__name__,
+                obj.__class__.__name__)
+            )
+    

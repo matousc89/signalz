@@ -35,6 +35,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-goniometric` 
+    
 
 .. cssclass:: funcitem
 
@@ -43,6 +44,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-goniometric` 
+    
 
 .. cssclass:: funcitem
 
@@ -51,6 +53,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-steps` 
+    
 
 .. cssclass:: funcitem
 
@@ -59,6 +62,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-steps`, :ref:`tags-random` 
+    
 
 .. cssclass:: funcitem
 
@@ -67,14 +71,34 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-chaotic` 
+    
 
 .. cssclass:: funcitem
 
-    * :ref:`generators-white_noise`
+    * :ref:`generators-gaussian_white_noise`
 
 .. cssclass:: functag
 
-    :ref:`tags-random` 
+    :ref:`tags-random`, :ref:`tags-noise` 
+    
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-uniform_white_noise`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`, :ref:`tags-noise`
+    
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-brownian_noise`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`, :ref:`tags-noise`
+    
 
 .. cssclass:: funcitem
 
@@ -83,6 +107,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-autoregressive` 
+    
 
 .. cssclass:: funcitem
 

@@ -62,7 +62,7 @@ Function Documentation
 ======================================
 """
 import numpy as np
-from signalz.generators.white_noise import white_noise
+from signalz.generators.gaussian_white_noise import gaussian_white_noise
 
 import signalz
     
@@ -105,7 +105,7 @@ def autoregressive_model(n, a, const=0, noise="white", initials="none"):
         if noise == "none":
             noise = np.zeros(n)
         elif noise == "white":
-            noise = white_noise(n)
+            noise = gaussian_white_noise(n)
     else:
         try:
             noise = np.array(noise)
@@ -116,7 +116,7 @@ def autoregressive_model(n, a, const=0, noise="white", initials="none"):
     x = np.zeros(n)
     # handle initials 
     if initials == "random":
-        x[:taps] = white_noise(taps)
+        x[:taps] = gaussian_white_noise(taps)
     elif initials == "none":
         pass   
     else:
