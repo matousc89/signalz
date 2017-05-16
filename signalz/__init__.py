@@ -1,7 +1,8 @@
 """
 Current version: |version| (:ref:`changelog`)
 
-This library is designed to simplify testing data obtaining with Python.
+This library is designed to simplify tasks of synthetic data generation
+with Python.
 For code optimisation,
 this library uses `Numpy <http://www.numpy.org/>`_ for array operations.
 
@@ -89,7 +90,16 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-random`, :ref:`tags-noise`
+
     
+.. cssclass:: funcitem
+
+    * :ref:`generators-levy_noise`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`, :ref:`tags-noise`
+
 
 .. cssclass:: funcitem
 
@@ -98,7 +108,25 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-random`, :ref:`tags-noise`
-    
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-levy_flight`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-levy_walk`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`
+        
 
 .. cssclass:: funcitem
 

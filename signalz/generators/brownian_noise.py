@@ -32,7 +32,7 @@ from signalz.generators.uniform_white_noise import uniform_white_noise
 
 def brownian_noise(n, leak=0., start=0, std=1., source="gaussian"):
     """
-    Random values with uniform distribution.
+    This function produces Browninan noise.
 
     **Args:**
     

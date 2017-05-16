@@ -36,7 +36,6 @@ Function Documentation
 ======================================
 """
 import numpy as np
-import matplotlib.pylab as plt
 
 from signalz.misc import check_type_or_raise
 import signalz
