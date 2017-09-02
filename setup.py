@@ -11,7 +11,7 @@ def readme():
 setup(
     name = 'signalz',
     packages = find_packages(exclude=("tests",)),
-    version = '0.5',
+    version = '0.6',
     description = 'Synthetic data generators in Python',
     long_description = readme(),
     author = 'Matous Cejnek',

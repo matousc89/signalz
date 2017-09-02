@@ -146,6 +146,14 @@ Here is complete documentation for all implemented functions.
     :ref:`tags-population_model`, :ref:`tags-chaotic`  
 
 
+.. cssclass:: funcitem
+
+    * :ref:`generators-ecgsyn`
+
+.. cssclass:: functag
+
+    :ref:`tags-biosignal`  
+    
 
 Contact
 =====================
