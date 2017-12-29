@@ -114,14 +114,13 @@ def autoregressive_model(n, a, const=0, noise="white", initials="none"):
         if not len(noise) == n:
             raise ValueError('Noise array is not same length as n.')
     x = np.zeros(n)
-    # handle initials 
-    if initials == "random":
-        x[:taps] = gaussian_white_noise(taps)
-    elif initials == "none":
-        pass   
+    # handle initials
+    if type(initials) == str:
+        if initials == "random":
+            x[:taps] = gaussian_white_noise(taps)
+        elif initials == "none":
+            pass
     else:
-        if not len(a) == len(initials):
-            raise ValueError('The length of initials values and a must agree.')
         x[:taps] = initials
     # simulate system
     for k in range(taps,n-1):

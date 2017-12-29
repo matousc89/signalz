@@ -10,7 +10,7 @@ def readme():
 
 setup(
     name = 'signalz',
-    packages = find_packages(exclude=("tests",)),
+    packages = find_packages(),
     version = '0.6',
     description = 'Synthetic data generators in Python',
     long_description = readme(),
