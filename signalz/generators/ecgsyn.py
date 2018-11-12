@@ -9,7 +9,7 @@ standard deviation of the RR interval, LF/HF ratio.
 Copyright (c) 2003 by Patrick McSharry & Gari Clifford, All Rights Reserved 
 :cite:`mcsharry2003dynamical`.
 
-More information can be found in PhysionNet :cite:`mcsharry2003ecgsyn`.
+More information can be found in PhysionNet https://www.physionet.org/physiotools/ecgsyn/
 
 Example Usage
 ===============
