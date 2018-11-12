@@ -18,4 +18,8 @@ from signalz.generators.cosinus import cosinus
 from signalz.generators.steps import steps
 from signalz.generators.random_steps import random_steps
 
+# lorem ipsum
+import signalz.generators.lorem_ipsum 
+
+
 

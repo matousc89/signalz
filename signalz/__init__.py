@@ -29,14 +29,24 @@ The User Quide
 
 Here is complete documentation for all implemented functions.
 
+
+
 .. cssclass:: funcitem
 
-    * :ref:`generators-sinus`
+    * :ref:`generators-autoregressive_model`
 
 .. cssclass:: functag
 
-    :ref:`tags-goniometric` 
-    
+    :ref:`tags-autoregressive` 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-brownian_noise`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`, :ref:`tags-noise`
+
 
 .. cssclass:: funcitem
 
@@ -45,6 +55,25 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-goniometric` 
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-gaussian_white_noise`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`, :ref:`tags-noise` 
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-sinus`
+
+.. cssclass:: functag
+
+    :ref:`tags-goniometric` 
+    
     
 
 .. cssclass:: funcitem
@@ -72,16 +101,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-chaotic` 
-    
-
-.. cssclass:: funcitem
-
-    * :ref:`generators-gaussian_white_noise`
-
-.. cssclass:: functag
-
-    :ref:`tags-random`, :ref:`tags-noise` 
-    
+        
 
 .. cssclass:: funcitem
 
@@ -95,15 +115,6 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: funcitem
 
     * :ref:`generators-levy_noise`
-
-.. cssclass:: functag
-
-    :ref:`tags-random`, :ref:`tags-noise`
-
-
-.. cssclass:: funcitem
-
-    * :ref:`generators-brownian_noise`
 
 .. cssclass:: functag
 
@@ -126,16 +137,8 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-random`
-        
 
-.. cssclass:: funcitem
 
-    * :ref:`generators-autoregressive_model`
-
-.. cssclass:: functag
-
-    :ref:`tags-autoregressive` 
-    
 
 .. cssclass:: funcitem
 
