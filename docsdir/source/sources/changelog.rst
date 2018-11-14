@@ -3,6 +3,9 @@
 Changelog
 ===========
 
+**Version 0.7**
+    Added :ref:`generators-lorem_ipsum` - Lorem Ipsum generator.
+
 **Version 0.6**
     Added :ref:`generators-ecgsyn` - generator of synthetic ECG.
 
@@ -21,7 +24,7 @@ Changelog
  The modifications include bugfixes and feature improvements.
 
 **Version 0.3**
- Logistic map was added :ref:`generators-logistic_map`. Furthermore
+ :ref:`generators-logistic_map` was added. Furthermore
  the documentation was upgraded.
 
 **Version 0.2**
