@@ -5,11 +5,9 @@ Random
 
 This tag covers functions that are using pseudorandom numbers.
 
-:ref:`generators-gaussian_white_noise`
-
-:ref:`generators-uniform_white_noise`
-
 :ref:`generators-brownian_noise`
+
+:ref:`generators-gaussian_white_noise`
 
 :ref:`generators-random_steps`
 
@@ -19,5 +17,8 @@ This tag covers functions that are using pseudorandom numbers.
 
 :ref:`generators-levy_walk`
 
+:ref:`generators-lorem_ipsum`
+
+:ref:`generators-uniform_white_noise`
 
 

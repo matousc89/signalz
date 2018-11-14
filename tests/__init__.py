@@ -76,10 +76,41 @@ class TestFunctions(unittest.TestCase):
             beta=0.5, sigma=1., position=-2)            
         self.assertAlmostEqual(x.sum(), -1002644.5419602607, 4)
         
+    def test_lorem_ipsum_get_sentence(self):
+        """
+        Function should return string.
+        The function output should contain given number of words.
+        """
+        out = signalz.lorem_ipsum.get_sentence(words=10)
+        count = len(out.split(" "))
+        self.assertIs(type(out), str)
+        self.assertEqual(count, 10)
         
+    def test_lorem_ipsum_get_text(self):
+        """
+        Function should return string.
+        The function output should contain given number of words.
+        """
+        out = signalz.lorem_ipsum.get_text(words=30)
+        count = len(out.split(" "))
+        self.assertIs(type(out), str)
+        self.assertEqual(count, 30)
         
+    def test_lorem_ipsum_get_paragraphs(self):
+        """
+        Function should return string.
+        The function output should contain given number of words.
+        the function output should contane given number of newlines (paragraphs).
+        """
+        out = signalz.lorem_ipsum.get_paragraphs(words=123, paragraphs=3)
+        count = len(out.replace("\n", " ").split(" "))
+        newlines_count = out.count("\n")
+        self.assertIs(type(out), str)
+        self.assertEqual(count, 123)
+        self.assertEqual(newlines_count, 3-1)
         
-        
+
+
         
         
         

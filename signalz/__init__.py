@@ -39,6 +39,8 @@ Here is complete documentation for all implemented functions.
 
     :ref:`tags-autoregressive` 
 
+
+
 .. cssclass:: funcitem
 
     * :ref:`generators-brownian_noise`
@@ -46,6 +48,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-random`, :ref:`tags-noise`
+
 
 
 .. cssclass:: funcitem
@@ -57,6 +60,17 @@ Here is complete documentation for all implemented functions.
     :ref:`tags-goniometric` 
 
 
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-ecgsyn`
+
+.. cssclass:: functag
+
+    :ref:`tags-biosignal` 
+
+
+
 .. cssclass:: funcitem
 
     * :ref:`generators-gaussian_white_noise`
@@ -64,54 +78,9 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-random`, :ref:`tags-noise` 
-
-
-.. cssclass:: funcitem
-
-    * :ref:`generators-sinus`
-
-.. cssclass:: functag
-
-    :ref:`tags-goniometric` 
-    
     
 
-.. cssclass:: funcitem
 
-    * :ref:`generators-steps`
-
-.. cssclass:: functag
-
-    :ref:`tags-steps` 
-    
-
-.. cssclass:: funcitem
-
-    * :ref:`generators-random_steps`
-
-.. cssclass:: functag
-
-    :ref:`tags-steps`, :ref:`tags-random` 
-    
-
-.. cssclass:: funcitem
-
-    * :ref:`generators-mackey_glass`
-
-.. cssclass:: functag
-
-    :ref:`tags-chaotic` 
-        
-
-.. cssclass:: funcitem
-
-    * :ref:`generators-uniform_white_noise`
-
-.. cssclass:: functag
-
-    :ref:`tags-random`, :ref:`tags-noise`
-
-    
 .. cssclass:: funcitem
 
     * :ref:`generators-levy_noise`
@@ -121,6 +90,7 @@ Here is complete documentation for all implemented functions.
     :ref:`tags-random`, :ref:`tags-noise`
 
 
+
 .. cssclass:: funcitem
 
     * :ref:`generators-levy_flight`
@@ -128,6 +98,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-random`
+
 
 
 .. cssclass:: funcitem
@@ -149,13 +120,67 @@ Here is complete documentation for all implemented functions.
     :ref:`tags-population_model`, :ref:`tags-chaotic`  
 
 
+
 .. cssclass:: funcitem
 
-    * :ref:`generators-ecgsyn`
+    * :ref:`generators-lorem_ipsum`
 
 .. cssclass:: functag
 
-    :ref:`tags-biosignal`  
+    :ref:`tags-text`, :ref:`tags-random`  
+
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-mackey_glass`
+
+.. cssclass:: functag
+
+    :ref:`tags-chaotic` 
+        
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-random_steps`
+
+.. cssclass:: functag
+
+    :ref:`tags-steps`, :ref:`tags-random` 
+    
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-sinus`
+
+.. cssclass:: functag
+
+    :ref:`tags-goniometric` 
+    
+    
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-steps`
+
+.. cssclass:: functag
+
+    :ref:`tags-steps` 
+        
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-uniform_white_noise`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`, :ref:`tags-noise`
+
+    
+ 
     
 
 Contact
