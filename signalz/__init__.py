@@ -53,6 +53,16 @@ Here is complete documentation for all implemented functions.
 
 .. cssclass:: funcitem
 
+    * :ref:`generators-card_dealer`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`
+
+
+
+.. cssclass:: funcitem
+
     * :ref:`generators-cosinus`
 
 .. cssclass:: functag
@@ -168,7 +178,7 @@ Here is complete documentation for all implemented functions.
 .. cssclass:: functag
 
     :ref:`tags-steps` 
-        
+
 
 
 .. cssclass:: funcitem
@@ -179,9 +189,8 @@ Here is complete documentation for all implemented functions.
 
     :ref:`tags-random`, :ref:`tags-noise`
 
-    
- 
-    
+
+
 
 Contact
 =====================

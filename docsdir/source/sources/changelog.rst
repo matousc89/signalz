@@ -3,6 +3,9 @@
 Changelog
 ===========
 
+**Version 0.8**
+    Added :ref:`generators-card_dealer` - Generator of card sets.
+
 **Version 0.7**
     Added :ref:`generators-lorem_ipsum` - Lorem Ipsum generator.
 

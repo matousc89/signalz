@@ -108,9 +108,14 @@ class TestFunctions(unittest.TestCase):
         self.assertIs(type(out), str)
         self.assertEqual(count, 123)
         self.assertEqual(newlines_count, 3-1)
-        
+
+    def test_card_dealer_output_size(self):
+        """
+        Check if the output has a correct size.
+        """
+        x, y = 2, 3
+        data = signalz.card_dealer(y, x, deck="standard+wild", decks_number=1)
+        self.assertEqual(len(data), x)
+        self.assertEqual(len(data[0]), y)
 
 
-        
-        
-        
