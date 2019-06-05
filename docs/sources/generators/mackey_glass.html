@@ -1,0 +1,127 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mackey-Glass Discrete Equation &#8212; Signalz 0.8 documentation</title>
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="description" content="Signalz - synthetic data generators in Python">
+    <meta name="keywords" content="signal, data, generator, python, artificial, synthetic">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73796119-7', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../../index.html">
+          <span>Signalz 0.8 documentation</span></a></h1>
+        <h2 class="heading"><span>Mackey-Glass Discrete Equation</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        <a class="uplink" href="../../index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-signalz.generators.mackey_glass">
+<span id="mackey-glass-discrete-equation"></span><span id="generators-mackey-glass"></span><h1>Mackey-Glass Discrete Equation<a class="headerlink" href="#module-signalz.generators.mackey_glass" title="Permalink to this headline">¶</a></h1>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.1.</span></p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 0.2.</span></p>
+</div>
+<p>This function generates data according a discrete realization of Mackey-Glass 
+equation as follows</p>
+<p><span class="math notranslate nohighlight">\(x_{k+1} = c \cdot x_k + \frac{\large{a \cdot x_{k-d}}}{b + x^{e}_{k-d}}\)</span></p>
+<p>The original Mackey-Glass equation <a class="reference internal" href="#glass2010mackey" id="id1">[1]</a> is the nonlinear
+time delay differential equation.</p>
+<div class="section" id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>In this example is simulated 1000 samples with arguments that cause
+chaotic behaviour.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">signalz</span><span class="o">.</span><span class="n">mackey_glass</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mi">23</span><span class="p">,</span> <span class="n">e</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The parameters  <cite>a</cite>, <cite>b</cite>, <cite>c</cite>, <cite>d</cite>, <cite>e</cite> can be a scalar or a vector. In case
+of a vector, every item represents parameter for one sample.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p id="bibtex-bibliography-sources/generators/mackey_glass-0"><table class="docutils citation" frame="void" id="glass2010mackey" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Leon Glass and Michael Mackey. Mackey-glass equation. <em>Scholarpedia</em>, 5(3):6908, 2010.</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<div class="section" id="function-documentation">
+<h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="signalz.generators.mackey_glass.mackey_glass">
+<code class="descclassname">signalz.generators.mackey_glass.</code><code class="descname">mackey_glass</code><span class="sig-paren">(</span><em>n</em>, <em>a=0.2</em>, <em>b=0.8</em>, <em>c=0.9</em>, <em>d=23</em>, <em>e=10</em>, <em>initial=0.1</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/signalz/generators/mackey_glass.html#mackey_glass"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#signalz.generators.mackey_glass.mackey_glass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mackey-Glass discrete equation.</p>
+<p><strong>Args:</strong></p>
+<ul class="simple">
+<li><cite>n</cite> - length of the output data (int) - how many samples will be on output</li>
+</ul>
+<p><strong>Kwargs:</strong></p>
+<p>Parameters  <cite>a</cite>, <cite>b</cite>, <cite>c</cite>, <cite>d</cite>, <cite>e</cite> can be a scalar or a vector. In case
+of a vector, every item represents parameter for one sample.</p>
+<ul class="simple">
+<li><cite>a</cite> - parameter of the model (float, 1d array), default is 0.2</li>
+<li><cite>b</cite> - parameter of the model (float, 1d array), default is 0.8</li>
+<li><cite>c</cite> - parameter of the model (float, 1d array), default is 0.9</li>
+<li><cite>d</cite> - time delay of the model (int, 1d array), default is 23</li>
+<li><cite>e</cite> - parameter of the model (float, 1d array), default is 10</li>
+<li><cite>initial</cite> - initial value (float), default is 0.1</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul class="simple">
+<li><cite>x</cite> - output of Mackey-Glass equation</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        <a class="uplink" href="../../index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2019, Matous C.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>

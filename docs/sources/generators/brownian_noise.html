@@ -1,0 +1,113 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Brownian Noise (Random Walk, Red Noise) &#8212; Signalz 0.8 documentation</title>
+    <link rel="stylesheet" href="../../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="description" content="Signalz - synthetic data generators in Python">
+    <meta name="keywords" content="signal, data, generator, python, artificial, synthetic">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73796119-7', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="../../index.html">
+          <span>Signalz 0.8 documentation</span></a></h1>
+        <h2 class="heading"><span>Brownian Noise (Random Walk, Red Noise)</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        <a class="uplink" href="../../index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="module-signalz.generators.brownian_noise">
+<span id="brownian-noise-random-walk-red-noise"></span><span id="generators-brownian-noise"></span><h1>Brownian Noise (Random Walk, Red Noise)<a class="headerlink" href="#module-signalz.generators.brownian_noise" title="Permalink to this headline">¶</a></h1>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.4.</span></p>
+</div>
+<p>This function generates Brownian noise series. The noise is produced by
+integration of white noise (gaussian or uniform).</p>
+<p>This function uses
+<cite>numpy.random.normal</cite> and <cite>numpy.random.uniform</cite></p>
+<div class="section" id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>The following example produce 1000 samples of brownian noise starting in
+value 10 (<cite>start=10</cite>). The noise is produced by integration of white gaussian
+noise (<cite>source=”gaussian”</cite>) with standard deviation of 1 (<cite>std=1</cite>).
+To keep in noise in some reasonable range,
+it is used 10% leaky integration (<cite>leak=0.1</cite>).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">signalz</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">signalz</span><span class="o">.</span><span class="n">brownian_noise</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="n">leak</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">std</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s2">&quot;gaussian&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="function-documentation">
+<h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="signalz.generators.brownian_noise.brownian_noise">
+<code class="descclassname">signalz.generators.brownian_noise.</code><code class="descname">brownian_noise</code><span class="sig-paren">(</span><em>n</em>, <em>leak=0.0</em>, <em>start=0</em>, <em>std=1.0</em>, <em>source='gaussian'</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/signalz/generators/brownian_noise.html#brownian_noise"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#signalz.generators.brownian_noise.brownian_noise" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function produces Browninan noise.</p>
+<p><strong>Args:</strong></p>
+<ul class="simple">
+<li><cite>n</cite> - length of the output data (int) - how many samples will be on output</li>
+</ul>
+<p><strong>Kwargs:</strong></p>
+<ul class="simple">
+<li><cite>leak</cite> - leakage during integration (float), this should prevent signal
+from wander off. Possible value is <cite>0 &lt;= leak &lt; 1</cite></li>
+<li><cite>start</cite> - offset on the start (float)</li>
+<li><cite>std</cite> - standard deviation of source white noise (float), in case of
+uniform distribution it is the difference between min and max value.</li>
+<li><cite>source</cite> - distribution of source white noise (str). Options are
+<cite>gaussian</cite> or <cite>uniform</cite></li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul class="simple">
+<li>vector of values representing the noise (1d array)</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        <a class="uplink" href="../../index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2019, Matous C.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>
