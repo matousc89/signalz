@@ -1,4 +1,8 @@
-try:    
+# numpy-less generators
+from signalz.generators.credit_card_number import credit_card_number
+from signalz.generators.country_name import country_name
+
+try:
     import numpy
 
     # fancy stuff
@@ -20,9 +24,6 @@ try:
     from signalz.generators.cosinus import cosinus
     from signalz.generators.steps import steps
     from signalz.generators.random_steps import random_steps
-
-    # categoric data
-    from signalz.generators.credit_card_number import credit_card_number
 
     # others
     from signalz.generators.card_dealer import card_dealer_numpy as card_dealer

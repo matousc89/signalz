@@ -3,6 +3,10 @@
 Changelog
 ===========
 
+**Version 0.9**
+    Added :ref:`generators-credit_card_number` and
+    :ref:`generators-country_name`.
+
 **Version 0.8**
     Added :ref:`generators-card_dealer` - Generator of card sets.
 

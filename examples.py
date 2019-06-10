@@ -24,9 +24,14 @@ import signalz
 # print(cards)
 
 
-cc = signalz.credit_card_number("American Express")
+# cc = signalz.credit_card_number("American Express")
+#
+# print(cc)
 
-print(cc)
+# print(dir(signalz))
 
+out = signalz.country_name(5000, repeat=False)
+
+print(out)
 
 

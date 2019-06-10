@@ -63,22 +63,31 @@ Here is complete documentation for all implemented functions.
 
 .. cssclass:: funcitem
 
-    * :ref:`generators-credit_card_number`
+    * :ref:`generators-cosinus`
 
 .. cssclass:: functag
 
-    :ref:`tags-random`
+    :ref:`tags-goniometric`
 
 
 
 .. cssclass:: funcitem
 
-    * :ref:`generators-cosinus`
+    * :ref:`generators-country_name`
 
 .. cssclass:: functag
 
-    :ref:`tags-goniometric` 
+    :ref:`tags-random`, :ref:`tags-text`
 
+
+
+.. cssclass:: funcitem
+
+    * :ref:`generators-credit_card_number`
+
+.. cssclass:: functag
+
+    :ref:`tags-random`
 
 
 .. cssclass:: funcitem

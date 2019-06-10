@@ -1,5 +1,5 @@
 """
-.. versionadded:: 0.8
+.. versionadded:: 0.9
 
 This function generates credit card number valid
 according to the Luhn algorithm.
@@ -11,20 +11,22 @@ Get credit card number (in default format - Visa):
 
 .. code-block:: python
 
-    signalz.credit_card_number("American Express")
+    >>> signalz.credit_card_number()
+    '4813208059184315'
 
 Get credit card number in American Express card format:
 
 .. code-block:: python
 
-    signalz.credit_card_number("American Express")
+    >>> signalz.credit_card_number("American Express")
+    '371481390078379'
 
 Get credit card in custom format:
 
 .. code-block:: python
 
-    signalz.credit_card_number(prefix="321", length=10)
-
+    >>> signalz.credit_card_number(prefix="321", length=10)
+    '3216009492'
 
 Function Documentation
 ======================================

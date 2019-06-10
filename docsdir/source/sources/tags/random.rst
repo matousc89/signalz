@@ -21,4 +21,6 @@ This tag covers functions that are using pseudorandom numbers.
 
 :ref:`generators-uniform_white_noise`
 
+:ref:`generators-country_name`
 
+:ref:`generators-credit_card_number`
