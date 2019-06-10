@@ -118,4 +118,10 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual(len(data), x)
         self.assertEqual(len(data[0]), y)
 
-
+    def test_credit_card_number(self):
+        """
+        Check if the output is valid credit card number.
+        """
+        from signalz.generators.credit_card_number import verify
+        cc = signalz.credit_card_number("Visa")
+        self.assertEqual(verify(cc), True)
