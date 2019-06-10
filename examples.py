@@ -30,7 +30,7 @@ import signalz
 
 # print(dir(signalz))
 
-out = signalz.country_name(5000, repeat=False)
+out = signalz.street_name()
 
 print(out)
 

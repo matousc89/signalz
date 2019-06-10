@@ -1,7 +1,7 @@
 """
 .. versionadded:: 0.9
 
-This randomly choose name or names of known countries.
+This function randomly choose name or names of known countries.
 
 Example Usage
 ===============
@@ -20,12 +20,12 @@ Five different countries:
     >>> signalz.country_name(n=5)
     ['Kosovo', 'Honduras', 'France', 'El Salvador', 'Tuvalu']
 
-If you need sample bigger than number of all countries,
-then use the function with `repeat` argument:
+If you need only small sample, you can make all names unique
+with argument `repeat`:
 
 .. code-block:: python
 
-    >>> signalz.country_name(n=5, repeat=True)
+    >>> signalz.country_name(n=5, repeat=False)
 
 Function Documentation
 ======================================
@@ -36,7 +36,7 @@ def country_name(n=1, repeat=True):
     """
     Function that randomly pick one or more names of countries.
 
-    :param n: number of sample (how many countries)
+    :param n: size of sample (how many countries)
     :param repeat: if the country names can repeat in sample
     :return: one name of country (string), or list of names
     """

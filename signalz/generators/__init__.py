@@ -1,6 +1,7 @@
 # numpy-less generators
 from signalz.generators.credit_card_number import credit_card_number
 from signalz.generators.country_name import country_name
+from signalz.generators.street_name import street_name
 
 try:
     import numpy

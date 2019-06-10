@@ -23,4 +23,6 @@ This tag covers functions that are using pseudorandom numbers.
 
 :ref:`generators-country_name`
 
+:ref:`generators-street_name`
+
 :ref:`generators-credit_card_number`

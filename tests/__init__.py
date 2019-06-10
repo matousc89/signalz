@@ -134,3 +134,12 @@ class TestFunctions(unittest.TestCase):
         cs = signalz.country_name(n=2)
         self.assertIs(type(c), str)
         self.assertIs(type(cs), list)
+
+    def test_street_name(self):
+        """
+        Check if the street name returns correct output
+        """
+        c = signalz.street_name()
+        cs = signalz.street_name(n=2)
+        self.assertIs(type(c), str)
+        self.assertIs(type(cs), list)

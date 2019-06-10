@@ -4,7 +4,8 @@ Changelog
 ===========
 
 **Version 0.9**
-    Added :ref:`generators-credit_card_number` and
+    Added :ref:`generators-credit_card_number`,
+    :ref:`generators-street_name` and
     :ref:`generators-country_name`.
 
 **Version 0.8**

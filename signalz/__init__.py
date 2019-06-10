@@ -182,21 +182,31 @@ Here is complete documentation for all implemented functions.
 
 .. cssclass:: funcitem
 
+    * :ref:`generators-steps`
+
+.. cssclass:: functag
+
+    :ref:`tags-steps`
+
+
+
+.. cssclass:: funcitem
+
     * :ref:`generators-sinus`
 
 .. cssclass:: functag
 
     :ref:`tags-goniometric` 
-    
-    
+
+
 
 .. cssclass:: funcitem
 
-    * :ref:`generators-steps`
+    * :ref:`generators-street_name`
 
 .. cssclass:: functag
 
-    :ref:`tags-steps` 
+    :ref:`tags-random`, :ref:`tags-text`
 
 
 
