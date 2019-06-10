@@ -125,3 +125,12 @@ class TestFunctions(unittest.TestCase):
         from signalz.generators.credit_card_number import verify
         cc = signalz.credit_card_number("Visa")
         self.assertEqual(verify(cc), True)
+
+    def test_country_name(self):
+        """
+        Check if the country name returns correct output
+        """
+        c = signalz.country_name()
+        cs = signalz.country_name(n=2)
+        self.assertIs(type(c), str)
+        self.assertIs(type(cs), list)
